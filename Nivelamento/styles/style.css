@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #FAFCFE;
+    color: black;
+}
+
+h1 {
+    font-size: 36px; 
+    margin-bottom: 11px;
+}
+
+h2{
+    font-size: 24px; 
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight:lighter;
+}
+
+
+
+/* ------------------- HEADER ------------------- */
+
+header {
+    background-color: #4CAF50; 
+    padding: 37px 60px;
+    color: #F9F9F9;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+} 
+
+.logo {
+    font-weight: bold; 
+    font-size: 24px
+}
+
+/* ------------------- FIM HEADER ------------------- */
+
+
+/* ------------------- DIV LANDING ------------------- */
+
+.div-landing {
+    text-align: center; 
+    margin: 50px 0px;
+
+}
+
+.btn-saberMais {
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.div-landing .subdivInfo {
+    font-size: 18px;
+}
+
+/* ------------------- FIM DIV LANDING ------------------- */
+
+
+/* ------------------- DIV CARDS ------------------- */
+
+.div-cards {
+    justify-content: center; 
+    gap: 103px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.btn-grande{
+    text-align: center;
+    width: 300px;
+    height: 155px;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+/* ------------------- FIM DIV CARDS ------------------- */
+
+
+/* ------------------- DIV FALE CONOSCO ------------------- */
+
+.div-faleConosco {
+    display: flex; 
+    justify-content: center;
+}
+
+.campo{
+    color: lightgray;
+    width: 400px;
+    margin-bottom: 11px;
+    padding: 11px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.div-faleConosco h2 {
+    margin-bottom: 35px; 
+    text-align: center;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+}
+
+/* ------------------- FIM DIV FALE CONOSCO ------------------- */
+
+
+
+footer {
+    margin-top: 73px;
+    text-align: center;
+    padding: 39px;
+    background-color: #333333;
+    color:white
+}

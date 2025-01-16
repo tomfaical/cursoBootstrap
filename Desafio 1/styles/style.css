@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: white;
+}
+
+/* ------------------------- STYLE GUIDE ------------------------- */
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #4D4D4D;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ------------------------- FIM STYLE GUIDE ------------------------- */
+
+/* ------------------------- HEADER ------------------------- */
+
+header {
+    display: flex;
+    background-color: #F5F7FA;
+    justify-content: space-between;
+    color: #263238;
+    padding: 30px 105px;
+}
+
+.div-logo {        
+    display: flex;
+    align-items: center;
+}
+
+.div-nav {        
+    display: flex;
+    align-items: center;
+}
+
+.div-nav ul {    
+    display: flex;    
+    gap: 50px;
+
+}
+
+.div-nav li {
+    list-style: none;
+}
+
+.div-login {
+    display: flex;
+}
+
+.div-login .btn-login {
+    border: none;
+    background-color: transparent;
+    color: #4CAF4F;
+    padding: 10px 20px;
+}
+
+.div-login .btn-signUp {
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF4F;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 14px;
+}
+
+/* ------------------------- FIM HEADER ------------------------- */
+
+/* ------------------------- DIV CINZA ------------------------- */
+
+.div-cinza {
+    background-color: #F5F7FA;
+}
+
+/* ------------------------- FIM DIV CINZA ------------------------- */
+
+/* ------------------------- SECTION 1: LESSON AND INSIGHTS ------------------------- */
+
+.div-s1 {
+    display: flex;
+    height: 599px;
+    padding: 96px 144px;
+    align-items: center;
+    justify-content: center;
+    gap: 104px;
+    margin-bottom: 40px;
+}
+
+
+.div-lessons .h1-8years {
+    color: #4CAF4F;
+    margin-bottom: 16px;
+}
+
+.div-lessons p {
+    color: #717171;
+    margin-bottom: 32px;
+}
+
+.div-lessons .btn-register {
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF4F;
+    color: white;
+    padding: 14px 32px;
+
+}
+
+/* ------------------------- FIM SECTION 1: LESSON AND INSIGHTS ------------------------- */
+
+/* ------------------------- SECTION 2: CLIENTS ------------------------- */
+
+.div-s2 {
+    height: 190px;
+    padding: 0px 144px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.div-clients {
+    text-align: center;
+}
+
+.div-clients h2 {
+    margin-bottom: 8px;
+}
+
+.div-clients p {
+    color:#717171;
+    margin-bottom: 16px;
+}
+
+.div-clientLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98px;
+}
+
+/* ------------------------- FIM SECTION 2: CLIENTS ------------------------- */
+
+/* ------------------------- SECTION 3: ------------------------- */
+
+.div-s3 {
+
+}
+
+.div-manage {
+
+}
+
+.div-cards {
+
+}
+
+
+/* ------------------------- FIM SECTION 3: ------------------------- */
+
+/* ------------------------- SECTION 4: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 4: ------------------------- */
+
+/* ------------------------- SECTION 5: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 5: ------------------------- */
+
+/* ------------------------- SECTION 6: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 6: ------------------------- */
+
+/* ------------------------- SECTION 7: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 7: ------------------------- */
+
+/* ------------------------- SECTION 8: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 8: ------------------------- */
+
+/* ------------------------- SECTION 9: ------------------------- */
+
+
+
+/* ------------------------- FIM SECTION 9: ------------------------- */
+
