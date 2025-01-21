@@ -161,22 +161,44 @@ header {
 
 /* ------------------------- FIM SECTION 2: CLIENTS ------------------------- */
 
-/* ------------------------- SECTION 3: ------------------------- */
-/* 
-.div-s3 {
+/* ------------------------- SECTION 3: MANAGE COMMUNITY ------------------------- */
 
+.div-s3 {
+    justify-items: center;
+    height: 416px;
 }
 
 .div-manage {
-
+    max-width: 542px;
+    text-align: center;
 }
 
-.div-cards {
+.div-manage p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #717171;
+}
 
-} */
+.div-cardSection {
+    display: flex;
+    padding: 10px 144px;
+    gap: 125.5px;
+}
+
+.div-card {
+    justify-content: center;
+    text-align: center;
+    width: 299px;
+    padding: 24px 16px;
+}
+
+.div-card p {
+    font-size: 16px;
+    margin-top: 8px;
+}
 
 
-/* ------------------------- FIM SECTION 3: ------------------------- */
+/* ------------------------- FIM SECTION 3: MANAGE COMMUNITY ------------------------- */
 
 /* ------------------------- SECTION 4: ------------------------- */
 
