@@ -208,6 +208,16 @@ header {
     display: flex;
 }
 
+.div-unseen {
+    width: 661px;
+    padding-right: 60px;
+}
+
+.div-unseen p {
+    font-size: 14px;
+    
+}
+
 
 
 /* ------------------------- FIM SECTION 4: ------------------------- */
