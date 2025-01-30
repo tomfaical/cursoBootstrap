@@ -11,6 +11,15 @@
         .row {
             border-bottom: solid 1px black;
         }
+
+        .container {
+            border-bottom: dotted 1px lightgray;
+            padding-bottom: 25px;
+        }
+
+        .no-border {
+            border-bottom: none;
+        }
     </style>
 </head>
 
@@ -20,22 +29,15 @@
     </header>
 
     <div class="container mb-5">
-        <h1>h1 - Título 1</h1>
-        <h2>h2 - Título 2</h2>
-        <h3>h3 - Título 3</h3>
-        <h4>h4 - Título 4</h4>
-        <h5>h5 - Título 5</h5>
-        <h6>h6 - Título 6</h6>
+        <h1>h1 : Título 1</h1>
+        <h2>h2 : Título 2</h2>
+        <h3>h3 : Título 3</h3>
+        <h4>h4 : Título 4</h4>
+        <h5>h5 : Título 5</h5>
+        <h6>h6 : Título 6</h6>
     </div>
 
     <div class="container mb-5">
-        <h1>h1 - Título 1</h1>
-        <h2>h2 - Título 2</h2>
-        <h3>h3 - Título 3</h3>
-        <h4>h4 - Título 4</h4>
-        <h5>h5 - Título 5</h5>
-        <h6>h6 - Título 6</h6>
-        <br>
         <p class="h1">Isso aqui é um parágrafo</p>
         <p class="h2">Isso aqui é um parágrafo</p>
         <p class="h3">Isso aqui é um parágrafo</p>
@@ -45,12 +47,12 @@
     </div>
 
     <div class="container mb-5">
-        <h1 class="display-1">h1 - Título 1</h1>
-        <h2 class="display-2">h2 - Título 2</h2>
-        <h3 class="display-3">h3 - Título 3</h3>
-        <h4 class="display-4">h4 - Título 4</h4>
-        <h5 class="display-5">h5 - Título 5</h5>
-        <h6 class="display-6">h6 - Título 6</h6>
+        <h1 class="display-1">display-1 : Título 1</h1>
+        <h2 class="display-2">display-2 : Título 2</h2>
+        <h3 class="display-3">display-3 : Título 3</h3>
+        <h4 class="display-4">display-4 : Título 4</h4>
+        <h5 class="display-5">display-5 : Título 5</h5>
+        <h6 class="display-6">display-6 : Título 6</h6>
     </div>
 
     <div class="container mb-5">
@@ -200,6 +202,97 @@
         </div>
 
     </div>
+
+    <div class="container mb-5">
+        <ul class="list-unstyled">
+            <li class="text-primary">Item em azul</li>
+            <li class="text-danger">Item em vermelho</li>
+            <li class="mt-5">Item com margem superior</li>
+        </ul>
+    </div>
+
+    <div class="container mb-5">
+        <p class="text-start">texto alinhado à esquerda</p>
+        <p class="text-center">texto centralizado</p>
+        <p class="text-end">texto alinhado à direita</p>
+    </div>
+
+    <div class="container text-center mb-5">
+        <div class="row no-border mb-3">
+            <div class="col">EsTe TeXtO sErÁ mInÚsCuLo </div>
+            <div class="col">>>>>></div>
+            <div class="col text-lowercase">EsTe TeXtO sErÁ mInÚsCuLo</div>
+        </div>
+        <div class="row no-border mb-3">
+            <div class="col">EsTe TeXtO sErÁ mAiÚsCuLo </div>
+            <div class="col">>>>>></div>
+            <div class="col text-uppercase">EsTe TeXtO sErÁ mAiÚsCuLo</div>
+        </div>
+        <div class="row no-border mb-3">
+            <div class="col">este texto será capitalizado</div>
+            <div class="col">>>>>></div>
+            <div class="col text-capitalize">este texto será capitalizado</div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <p class="fw-normal">Texto com peso normal</p>
+        <p class="fw-bold">Texto em negrito</p>
+        <p class="fw-light">Texto leve</p>
+        <p class="fst-italic">Texto em itálico</p>
+        <p class="fst-normal">Texto sem itálico</p>
+        <div class="card">
+            <code>Exemplo de utilização do fst-italic e fst-normal:</code>
+            <code class="fst-italic">Esse texto está em itálico, <span class="fst-normal">menos essa parte</span>, que não está.</code>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <p class="text-decoration-underline">Texto sublinhado</p>
+        <p class="text-decoration-line-through">Texto tachado</p>
+        <p class="text-decoration-none">Texto normal (remoção de estilo)</p>
+    </div>
+
+    <div class="container mb-5">
+        <p class="fs-1">Texto  (fs-1)</p>
+        <p class="fs-2">Texto  (fs-2)</p>
+        <p class="fs-3">Texto  (fs-3)</p>
+        <p class="fs-4">Texto médio (fs-4)</p>
+        <p class="fs-5">Texto pequeno (fs-5)</p>
+    </div>
+
+    <div class="container mb-5">
+        <p class="text-primary">texto da cor azul</p>
+        <p class="text-secondary">texto da cor cinza</p>
+        <p class="text-success">texto da cor verde</p>
+        <p class="text-danger">texto da cor vermelho</p>
+        <p class="text-warning">texto da cor amarelo</p>
+        <p class="text-info">texto da cor azul claro</p>
+        <p class="text-white">texto da cor branco</p>
+        <p class="text-light">texto da cor branco</p>
+        <p class="text-dark">texto da cor preto</p>
+        <p class="text-muted">texto da cor cinza claro</p>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    branco
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
