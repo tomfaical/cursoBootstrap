@@ -97,7 +97,6 @@
     }
 
     form {
-        max-width: 400px;
         margin: 0 auto;
     }
 
@@ -109,7 +108,7 @@
 
     form input {
         color: lightgray;
-        width: 100%;
+        width: 400px;
         margin-bottom: 11px;
         padding: 11px;
         border: 1px solid lightgray;
@@ -142,6 +141,26 @@
     }
 
     /* ------------------- FIM FOOTER ------------------- */
+
+    /* ------------------- RESPOSTA ------------------- */
+
+    .bg-dark {
+        background-color: rgba(33, 37, 41, 1);
+    }
+
+    .p-3{
+        padding: 1rem;
+    }
+
+    .text-light {
+        color: rgb(248,249,250);
+    }
+
+    .text-bootstrap{
+        font-size: 1rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* ------------------- FIM RESPOSTA ------------------- */
 
 /* ############################## FIM RESPONSIVE: PC ############################## */
 
