@@ -1,1 +1,0 @@
-Ex01: Crie uma página HTML que demonstre uma hierarquia de texto, usando as classes de tamanho (fs) e peso da fonte(fw-{peso}).
