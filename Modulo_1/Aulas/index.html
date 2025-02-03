@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-dark container-fluid text-light text-center p-4">
+        <h1 class="display-3">Módulo 1 - Introdução ao Bootstrap</h1>
+    </header>
+    <!-- Contexto e história -->
+    <div class="container mt-5">
+        <div class="row my-4">
+            <div class="col">
+                <h2 class="display-6">Contexto</h2>
+                <div class="card" style="height: 25rem;" style="height: 25rem;">
+                    <div class="card-body">
+                        <p class="mt-3">Existem 3 tipos de desenvolvimento:</p>
+
+                        <dl class="row p-3">
+                            <dt class="col-sm-3">1. Back-end</dt>
+                            <dd class="col-sm-9">
+                                <p>É a parte <strong>visual</strong> do site, a parte com a qual o usuário interage;</p>
+                            </dd>
+
+                            <dt class="col-sm-3">. Front-end</dt>
+                            <dd class="col-sm-9">
+                                <p>É a parte <strong>funcional</strong> do site, a parte por trás do site, que roda
+                                    todas as funções necessárias;</p>
+                            </dd>
+
+                            <dt class="col-sm-3">3. Full-stack</dt>
+                            <dd class="col-sm-9">
+                                <p>É a <strong>integração</strong> de todas as partes do site, incluindo o
+                                    <strong>visual</strong>, o <strong>funcional</strong>, e a <strong>manipulação e
+                                        armazenamento de dados</strong>.
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <h2 class="display-6">Um pouco de história</h2>
+                <div class="card" style="height: 25rem;">
+                    <div class="card-body">
+                        <ul>
+                            <li>Criado em 2011 por Mark Otto e Jacob Thornton (trabalhavam no twitter)</li>
+                            <li> Vantagens
+                                <ul>
+                                    <li>
+                                        Responsividade <strong>automática</strong> --> "coloca infixos em partes do
+                                        código, o que
+                                        torna automaticamente responsivo"
+                                    </li>
+                                    <li>
+                                        Componentes <strong>prontos</strong> --> "não precisa estilizar do zero, o
+                                        próprio bootstrap
+                                        já oferece uma
+                                        série de facilitações"
+
+                                    </li>
+                                    <li>
+                                        Documentação <strong>completa</strong> --> "a documentação do BS tem completa na
+                                        internet,
+                                        tornando mt facil de aprender"
+                                    <li>Velocidade no desenvolvimento</li>
+                                    <li><strong class="text-success">Gratuito</strong></li>
+                                </ul>
+                            </li>
+                            <li> Quais são os materiais necessários para rodar o BS?
+                                <ul>
+                                    <li>Navegador atualizado --> Google Chrome</li>
+                                    <li>Editor de código --> VSCode</li>
+                                    <li>Internet --> precisa importar o bootstrap do repo online</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Incluindo bootstrap -->
+    <div class="container mt-5">
+        <h2 class="display-6">Existem 2 formas de incluir Bootstrap no seu projeto</h2>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card" style="height: 25rem;">
+                    <h2 class="card-title p-4 text-center">Via CDN</h2>
+                    <div class="card-body">
+                        <p class="h5 text-success p-2"><strong>Vantagens</strong></p>
+                        <ul>
+                            <li>fácil de configurar</li>
+                            <li>Menos peso no servidor</li>
+                            <li>Cache do navegador</li>
+                            <li>Sempre atualizado</li>
+                        </ul>
+                        <p class="h5 text-danger"><strong>Desvantagens</strong></p>
+                        <ul>
+                            <li>Precisa de internet</li>
+                            <li>Controle limitado</li>
+                            <li>Dificuldade de customização</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card align-items-center" style="height: 25rem;">
+                    <h2 class="card-title p-4 text-center">Via Download</h2>
+                    <div class="card-body text-center align-items-center">
+                        <a href="https://getbootstrap.com/docs/5.0/getting-started/download/"
+                            class="btn btn-outline-primary" role="button">
+                            <img src="" alt="Download button">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Infixos -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="display-6 p-4">Sobre infixos</h2>
+            </div>
+            <div class="col p-4">
+                <p style="width: 40rem;">
+                    <code>&gt; Infixos são a forma inteligente do Bootstrap de lidar com responsividade. Funciona como o media query (@media), mas se comporta como uma classe</code>
+                </p>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Breakpoints</th>
+                    <th scope="col">Infixo de classe</th>
+                    <th scope="col">Dimensões</th>
+                    <th scope="col">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Extra pequeno</td>
+                    <td>None</td>
+                    <td>&lt;576px</td>
+                    <td>Padrão</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Pequeno</td>
+                    <td>sm (small)</td>
+                    <td>&gt;=576px</td>
+                    <td>Celular</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Médio</td>
+                    <td>md (medium)</td>
+                    <td>&gt;=768px</td>
+                    <td>Tablet</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Grande</td>
+                    <td>lg (large)</td>
+                    <td>&gt;=992px</td>
+                    <td>Laptop</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Extra Grande</td>
+                    <td>xl (extra-large)</td>
+                    <td>&gt;=1200px</td>
+                    <td>Notebook</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Extra Extra Grande</td>
+                    <td>xxl (...)</td>
+                    <td>&gt;=1440px</td>
+                    <td>TV 4K</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Atividades 1 e 2 -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="height: 25rem;">
+                    <div class="card-title p-4">
+                        <h3><u>Atividade 1</u></h3>
+                    </div>
+                    <div class="card-body">
+                        <code>class="text-center text-xl-start</code>
+                        <div class="mt-4" style="height: 11em;">
+                            <p>Em uma tela de 862px, o conteúdo se alinhará ao:</p>
+                            <p>A) Centro</p>
+                            <p>B) Começo</p>
+                        </div>
+                        <p><small class="text-muted">R: Alt B</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="height: 25rem;">
+                    <div class="card-title p-4">
+                        <h3><u>Atividade 2</u></h3>
+                    </div>
+                    <div class="card-body">
+                        <code>class="text-center text-xl-start text-md-end"</code>
+                        <div class="mt-4" style="height: 11em;">
+                            <p>Em uma tela de 800px, o conteúdo se alinhará ao:</p>
+                            <p>A) Centro</p>
+                            <p>B) Começo</p>
+                            <p>C) Fim</p>
+                        </div>
+                        <p><small class="text-muted">R: Alt C</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Basic Features -->
+    <div class="container mt-5">
+        <h2 class="display-6 mb-5">Algumas features básicas</h2>
+        <div class="row">
+            <div class="col">
+                <h3>Botões</h3>
+                <div class="text-center mb-5">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-dark">Dark</button>
+                    <button class="btn btn-link">Link</button>
+                </div>
+
+                <div class="justify-content-center p-5 mb-5 d-flex gap-2">
+                    <button class="btn btn-outline-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-outline-success">Success</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-info">Info</button>
+                    <div class="bg-dark p-1">
+                        <button class="btn btn-outline-light">Light</button>
+                    </div>
+                    <button class="btn btn-outline-dark">Dark</button>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Cards</h3>
+                <div class="d-flex justify-content-center gap-5 m-5">
+                    <div class="card p-4" style="width: 18rem;">
+                        <img src="./img/pato.jpg" alt="..." class="card-img-top" style="aspect-ratio: 1/1;">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2">Pato</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet</p>
+                            <a href="#" class="btn btn-outline-warning"> >>>>>> 🦆 <<<<<< </a>
+                        </div>
+                    </div>
+
+                    <div class="card p-4" style="width: 18rem;">
+                        <img src="./img/flamengo.jpg" alt="..." class="card-img-top" style="aspect-ratio: 1/1;">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2">Flamengo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet</p>
+                            <a href="#" class="btn btn-outline-danger"> >>>>>> 🦩 <<<<<< </a>
+                        </div>
+                    </div>
+
+                    <div class="card p-4" style="width: 18rem;">
+                        <img src="./img/gato.jpg" alt="..." class="card-img-top" style="aspect-ratio: 1/1;">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2">Gato</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet</p>
+                            <a href="#" class="btn btn-outline-secondary"> >>>>>> 🐈 <<<<<< </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Containers -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="display-6 p-4">Sobre contâineres (ou containers)</h2>
+            </div>
+            <div class="col p-4">
+                <code>&gt; Containers são blocos principais que centralizam e alinham o conteúdo da página</code>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Extra Small <br>&lt;576px</th>
+                    <th scope="col">Small <br>&gt;=576px</th>
+                    <th scope="col">Medium <br>&gt;=768px</th>
+                    <th scope="col">Large <br>&gt;=992px</th>
+                    <th scope="col">Extra Large <br>&gt;=1200px</th>
+                    <th scope="col">Extra Extra Large <br>&gt;=1440px</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">.container</th>
+                    <td>100%</td>
+                    <td>540px</td>
+                    <td>720px</td>
+                    <td>960px</td>
+                    <td>1140px</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-sm</th>
+                    <td>100%</td>
+                    <td>540px</td>
+                    <td>720px</td>
+                    <td>960px</td>
+                    <td>1140px</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-md</th>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>720px</td>
+                    <td>960px</td>
+                    <td>1140px</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-lg</th>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>960px</td>
+                    <td>1140px</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-xl</th>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>1140px</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-xxl</th>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>1320px</td>
+                </tr>
+                <tr>
+                    <th scope="row">.container-fluid</th>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- A estrutura Grid -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="display-6 p-4">A estrutura <code>grid</code></h2>
+            </div>
+            <div class="col p-4">
+                <code>&gt; A página <strong>sempre</strong> é divida em 12 colunas</code> <br>
+                <code>&gt; O width de todas as colunas sempre é o viewport/12</code>
+            </div>
+        </div>
+        <table class="table-bordered text-center vertical-align-middle" style="width: 30rem; height: 30rem;">
+            <thead>
+                <tr>
+                    <th scope="col">0</th>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                    <th scope="col">5</th>
+                    <th scope="col">6</th>
+                    <th scope="col">7</th>
+                    <th scope="col">8</th>
+                    <th scope="col">9</th>
+                    <th scope="col">10</th>
+                    <th scope="col">11</th>
+                    <th scope="col">12</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Align Items -->
+        <div class="container mt-5">
+            <h2><code>&gt;&nbsp;Align Items</code></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col" style="border: 2px dashed grey;">
+                        <div class="p-3 row bg-dark align-items-start" style="height: 10rem;">
+                            <div class="col p-2 bg-success text-center" style="border: 1px dashed white;">Coluna 1</div>
+                            <div class="col p-2 bg-success text-center" style="border: 1px dashed white;">Coluna 2</div>
+                        </div>
+                    </div>
+                    <div class="col" style="border: 2px dashed grey;">
+                        <div class="p-4 row bg-dark align-items-center" style="height: 10rem;">
+                            <div class="col p-2 bg-primary text-center" style="border: 1px dashed white;">Coluna 3</div>
+                            <div class="col p-2 bg-primary text-center" style="border: 1px dashed white;">Coluna 4</div>
+                        </div>
+                    </div>
+                    <div class="col" style="border: 2px dashed grey;">
+                        <div class="p-4 row bg-dark align-items-end" style="height: 10rem;">
+                            <div class="col p-2 bg-warning text-center" style="border: 1px dashed white;">Coluna 5</div>
+                            <div class="col p-2 bg-warning text-center" style="border: 1px dashed white;">Coluna 6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Align Self -->
+        <div class="container mt-5">
+            <h2><code>&gt;&nbsp;Align Self</code></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col" style="border: 2px dashed grey;">
+                        <div class="p-3 row bg-dark" style="height: 10rem;">
+                            <div class="col p-2 bg-success text-center align-self-start">Coluna 1</div>
+                            <div class="col p-2 bg-primary text-center align-self-center">Coluna 2</div>
+                            <div class="col p-2 bg-warning text-center align-self-end">Coluna 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Justify Content -->
+        <div class="container mt-5">
+            <h2><code>&gt;&nbsp;Justify Content</code></h2>
+            <div class="container">
+                <div class="row p-3 bg-dark justify-content-start">
+                    <div class="p-2 col-6 bg-success text-center">Linha 1</div>
+                </div>
+                <div class="row p-3 bg-dark justify-content-center">
+                    <div class="p-2 col-6 bg-primary text-center">Linha 2</div>
+                </div>
+                <div class="row p-3 bg-dark justify-content-end">
+                    <div class="p-2 col-6 bg-warning text-center">Linha 3</div>
+                </div>
+            </div>
+        </div>
+        <!-- Order -->
+        <div class="container mt-5">
+            <h2><code>&gt;&nbsp;Order</code></h2>
+            <div class="container">
+                <div class="row p-4 bg-dark">
+                    <div class="p-2 col bg-success order-2 text-center" style="border: 1px dashed white;">Coluna 1</div>
+                    <div class="p-2 col bg-primary order-3 text-center" style="border: 1px dashed white;">Coluna 2</div>
+                    <div class="p-2 col bg-warning order-1 text-center" style="border: 1px dashed white;">Coluna 3</div>
+                </div>
+            </div>
+        </div>
+        <!-- Offset -->
+        <div class="container mt-5">
+            <h2><code>&gt;&nbsp;Offset</code></h2>
+            <div class="container">
+                <div class="row p-4 bg-dark" style="height: 80px;">
+                    <div class="p-2 bg-success text-center col-2 ">Coluna 1</div>
+                    <div class="p-2 bg-primary text-center col-2 offset-3">Coluna 2</div>
+                    <div class="p-2 bg-warning text-center col-2 offset-3">Coluna 3</div>
+                </div>
+                <div class="row p-4 bg-dark" style="height: 200px;">
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                    <div class="p-2 bg-primary col-1"></div>
+                    <div class="p-2 bg-light col-1"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Tipografia -->
+     <h2 class="display-6">Tipografia</h2>
+     melhora a legibilidade
+     - impacta na UX do usuário
+     - transmite profissionalismo
+     - guiar o usuário
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="display-6">Headers</h2>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+            <div class="col">
+                <h2 class="display-6">"Estilos" Headers</h2>
+                <p class="h1">Parágrafo com estilo h1</p>
+                <p class="h2">Parágrafo com estilo h2</p>
+                <p class="h3">Parágrafo com estilo h3</p>
+                <p class="h4">Parágrafo com estilo h4</p>
+                <p class="h5">Parágrafo com estilo h5</p>
+                <p class="h6">Parágrafo com estilo h6</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h2 class="display-6">Display Headers</h2>
+                <p class="display-1">Display 1</p>
+                <p class="display-2">Display 2</p>
+                <p class="display-3">Display 3</p>
+                <p class="display-4">Display 4</p>
+                <p class="display-5">Display 5</p>
+                <p class="display-6">Display 6</p>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="display-6">Lorem</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores inventore facere
+                            deserunt ipsa rerum, ducimus voluptate repudiandae. Repudiandae voluptatum asperiores,
+                            quisquam et itaque esse quia reiciendis recusandae enim autem!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="display-6">Parágrafos 'Lead'</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, rem eum.
+                            Nisi laborum perferendis assumenda minus, asperiores reprehenderit sed blanditiis eligendi
+                            id perspiciatis culpa at laboriosam ipsa animi, tempore mollitia!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6 my-5"><u>Tags</u></h2>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <mark>&lt;mark&gt;</mark>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag <mark>destaca texto</mark></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <del>&lt;del&gt;</del>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag geralmente é utilizada para marcar <del>textos deletados</del>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <s>&lt;s&gt;</s>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag geralmente é utilizada para marcar <s>textos outdated</s>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <ins>&lt;ins&gt;</ins>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag serve para indicar <ins>infos novas</ins>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <u>&lt;u&gt;</u>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag sublinha <u>textos</u>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <small>&lt;small&gt;</small>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag deixa <small>textos pequenos</small>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <strong>&lt;strong&gt;</strong>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag dá <strong>destaque semântico</strong> a textos.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <b>&lt;b&gt;</b>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag deixa textos <b>em negrito</b>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <em>&lt;em&gt;</em>.</p>
+                </div>
+                <div class="col">
+                    <p>Essa tag deixa textos <em>em itálico</em>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <code>&lt;code&gt;</code></p>
+                </div>
+                <div class="col">
+                    <p>Essa tag formata códigos: <code>print("Hello, World!")</code></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <kbd>&lt;kbd&gt;</kbd></p>
+                </div>
+                <div class="col">
+                    <p>Essa tag marca teclas de teclado: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <samp>&lt;samp&gt;</samp></p>
+                </div>
+                <div class="col">
+                    <p>Essa tag denota textos de saída de sistema: <samp>Error 404</samp></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <var>&lt;var&gt;</var></p>
+                </div>
+                <div class="col">
+                    <p>Essa tag destaca variáveis em texto: <var>x</var> + <var>y</var> = <var>z</var></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag <span>&lt;span&gt;</span></p>
+                </div>
+                <div class="col">
+                    <p>Essa tag permite aplicar estilização a trechos de texto: <span
+                            style="background-color: blanchedalmond;color: brown; border-radius: 12px; padding: 5px;">Lorem
+                            ipsum</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Essa é a tag
+                    <blockquote>&lt;blockquote&gt;</blockquote>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>Essa tag permite fazer uma citação:</p>
+                    <figure>
+                        <blockquote class="blockquote">"Bootstrap facilita o desenvolvimento meu fi"</blockquote>
+                        <figcaption class="blockquote-footer"><cite>Matheus Alvarez</cite></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6">Listas e estilização</h2>
+            <ul class="list-unstyled">
+                <li class="text-primary">Item em azul</li>
+                <li class="text-danger">Item em vermelho</li>
+                <li class="mt-5">Item com margem superior</li>
+            </ul>
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6 my-5">Alinhamento</h2>
+            <p class="text-start">texto alinhado à esquerda</p>
+            <p class="text-center">texto centralizado</p>
+            <p class="text-end">texto alinhado à direita</p>
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6 my-5">Capitalização</h2>
+            <div class="text-center">
+                <div class="row no-border mb-3">
+                    <div class="col">EsTe TeXtO sErÁ mInÚsCuLo </div>
+                    <div class="col">>>>>></div>
+                    <div class="col text-lowercase">EsTe TeXtO sErÁ mInÚsCuLo</div>
+                </div>
+                <div class="row no-border mb-3">
+                    <div class="col">EsTe TeXtO sErÁ mAiÚsCuLo </div>
+                    <div class="col">>>>>></div>
+                    <div class="col text-uppercase">EsTe TeXtO sErÁ mAiÚsCuLo</div>
+                </div>
+                <div class="row no-border mb-3">
+                    <div class="col">este texto será capitalizado</div>
+                    <div class="col">>>>>></div>
+                    <div class="col text-capitalize">este texto será capitalizado</div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6 my-5">Pesos e estilos</h2>
+            <p class="fw-normal">Texto com peso normal</p>
+            <p class="fw-bold">Texto em negrito</p>
+            <p class="fw-light">Texto leve</p>
+            <p class="fst-italic">Texto em itálico</p>
+            <p class="fst-normal">Texto sem estilo</p>
+            <div class="card my-4">
+                <code>Exemplo de utilização do fst-italic e fst-normal:</code>
+                <code
+                    class="fst-italic">Esse texto está em itálico, <span class="fst-normal">menos essa parte</span>, que não está.</code>
+            </div>
+            <p class="text-decoration-underline">Texto sublinhado</p>
+            <p class="text-decoration-line-through">Texto tachado</p>
+            <p class="text-decoration-none">Texto normal (remoção de estilo)</p>
+        </div>
+        <div class="container mb-5">
+            <h2 class="display-6 my-5">Tamanhos e cores de fonte</h2>
+            <div class="row">
+                <div class="col mb-5">
+                    <p class="fs-1">Texto (fs-1)</p>
+                    <p class="fs-2">Texto (fs-2)</p>
+                    <p class="fs-3">Texto (fs-3)</p>
+                    <p class="fs-4">Texto médio (fs-4)</p>
+                    <p class="fs-5">Texto pequeno (fs-5)</p>
+                </div>
+
+                <div class="col mb-5">
+                    <p class="text-primary">texto da cor azul</p>
+                    <p class="text-secondary">texto da cor cinza</p>
+                    <p class="text-success">texto da cor verde</p>
+                    <p class="text-danger">texto da cor vermelho</p>
+                    <p class="text-warning">texto da cor amarelo</p>
+                    <p class="text-info">texto da cor azul claro</p>
+                    <p class="text-white bg-dark">texto da cor branco</p>
+                    <p class="text-light bg-dark">texto da cor "claro"</p>
+                    <p class="text-dark">texto da cor preto</p>
+                    <p class="text-muted">texto da cor cinza claro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
