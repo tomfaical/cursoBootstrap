@@ -1,36 +1,36 @@
 /* ------------------------- STYLE GUIDE ------------------------- */
 
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 64px;
+  font-weight: bold;
+  font-size: 64px;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #4D4D4D;
+  font-weight: bold;
+  font-size: 36px;
+  color: #4d4d4d;
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 28px;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* ------------------------- FIM STYLE GUIDE ------------------------- */
@@ -38,51 +38,50 @@ h4 {
 /* ------------------------- HEADER ------------------------- */
 
 header {
-    display: flex;
-    background-color: #F5F7FA;
-    justify-content: space-between;
-    color: #263238;
-    padding: 30px 105px;
+  display: flex;
+  background-color: #f5f7fa;
+  justify-content: space-between;
+  color: #263238;
+  padding: 30px 105px;
 }
 
-.div-logo {        
-    display: flex;
-    align-items: center;
+.div-logo {
+  display: flex;
+  align-items: center;
 }
 
-.div-nav {        
-    display: flex;
-    align-items: center;
+.div-nav {
+  display: flex;
+  align-items: center;
 }
 
-.div-nav ul {    
-    display: flex;    
-    gap: 50px;
-
+.div-nav ul {
+  display: flex;
+  gap: 50px;
 }
 
 .div-nav li {
-    list-style: none;
+  list-style: none;
 }
 
 .div-login {
-    display: flex;
+  display: flex;
 }
 
 .div-login .btn-login {
-    border: none;
-    background-color: transparent;
-    color: #4CAF4F;
-    padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: #4caf4f;
+  padding: 10px 20px;
 }
 
 .div-login .btn-signUp {
-    border: none;
-    border-radius: 6px;
-    background-color: #4CAF4F;
-    color: white;
-    padding: 10px 20px;
-    margin-left: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf4f;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 14px;
 }
 
 /* ------------------------- FIM HEADER ------------------------- */
@@ -90,7 +89,7 @@ header {
 /* ------------------------- DIV CINZA ------------------------- */
 
 .div-cinza {
-    background-color: #F5F7FA;
+  background-color: #f5f7fa;
 }
 
 /* ------------------------- FIM DIV CINZA ------------------------- */
@@ -98,32 +97,30 @@ header {
 /* ------------------------- SECTION 1: LESSON AND INSIGHTS ------------------------- */
 
 .div-s1 {
-    display: flex;
-    padding: 96px 144px;
-    align-items: center;
-    justify-content: center;
-    gap: 104px;
-    margin-bottom: 40px;
+  display: flex;
+  padding: 96px 144px;
+  align-items: center;
+  justify-content: center;
+  gap: 104px;
+  margin-bottom: 40px;
 }
 
-
 .div-lessons .h1-8years {
-    color: #4CAF4F;
-    margin-bottom: 16px;
+  color: #4caf4f;
+  margin-bottom: 16px;
 }
 
 .div-lessons p {
-    color: #717171;
-    margin-bottom: 32px;
+  color: #717171;
+  margin-bottom: 32px;
 }
 
 .div-lessons .btn-register {
-    border: none;
-    border-radius: 4px;
-    background-color: #4CAF4F;
-    color: white;
-    padding: 14px 32px;
-
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf4f;
+  color: white;
+  padding: 14px 32px;
 }
 
 /* ------------------------- FIM SECTION 1: LESSON AND INSIGHTS ------------------------- */
@@ -131,30 +128,30 @@ header {
 /* ------------------------- SECTION 2: CLIENTS ------------------------- */
 
 .div-s2 {
-    padding: 0px 144px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
+  padding: 0px 144px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .div-clients {
-    text-align: center;
+  text-align: center;
 }
 
 .div-clients h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .div-clients p {
-    color:#717171;
-    margin-bottom: 16px;
+  color: #717171;
+  margin-bottom: 16px;
 }
 
 .div-clientLogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
 }
 
 /* ------------------------- FIM SECTION 2: CLIENTS ------------------------- */
@@ -162,37 +159,37 @@ header {
 /* ------------------------- SECTION 3: MANAGE COMMUNITY ------------------------- */
 
 .div-s3 {
-    justify-items: center;
-    margin-bottom: 40px;
+  justify-items: center;
+  margin-bottom: 40px;
 }
 
 .div-manage {
-    max-width: 542px;
-    text-align: center;
+  max-width: 542px;
+  text-align: center;
 }
 
 .div-manage p {
-    margin-top: 8px;
-    font-size: 16px;
-    color: #717171;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #717171;
 }
 
 .div-cardSection {
-    display: flex;
-    padding: 10px 144px;
-    gap: 125.5px;
+  display: flex;
+  padding: 10px 144px;
+  gap: 125.5px;
 }
 
 .div-card {
-    justify-content: center;
-    text-align: center;
-    width: 299px;
-    padding: 24px 16px;
+  justify-content: center;
+  text-align: center;
+  width: 299px;
+  padding: 24px 16px;
 }
 
 .div-card p {
-    font-size: 16px;
-    margin-top: 8px;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 /* ------------------------- FIM SECTION 3: MANAGE COMMUNITY ------------------------- */
@@ -200,28 +197,28 @@ header {
 /* ------------------------- SECTION 4: ------------------------- */
 
 .div-s4 {
-    justify-items: center;
-    display: flex;
-    margin-bottom: 40px;
+  justify-items: center;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .div-unseen {
-    width: 661px;
-    padding-right: 60px;
+  width: 661px;
+  padding-right: 60px;
 }
 
 .div-unseen p {
-    font-size: 14px;
-    margin-top: 16px;
-    margin-bottom: 32px;    
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .btn-learnMore {
-    border: none;
-    border-radius: 4px;
-    background-color: #4CAF4F;
-    color: white;
-    padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf4f;
+  color: white;
+  padding: 14px 32px;
 }
 
 /* ------------------------- FIM SECTION 4: ------------------------- */
@@ -229,48 +226,48 @@ header {
 /* ------------------------- SECTION 5: ------------------------- */
 
 .div-s5 {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 144px;
-    margin-bottom: 40px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 144px;
+  margin-bottom: 40px;
 }
 
 .div-s5-Subdiv {
-    display: flex;
-    gap: 72px;
+  display: flex;
+  gap: 72px;
 }
 
 .div-helping {
-    width: 540px;
+  width: 540px;
 }
 
 .div-helping .h-green {
-    font-size: 36px;
-    font-weight: bold;
-    color: #4CAF4F;
+  font-size: 36px;
+  font-weight: bold;
+  color: #4caf4f;
 }
 
 .div-helping p {
-    color: #18191F;
+  color: #18191f;
 }
 
 .div-statSection {
-    display: block;
+  display: block;
 }
 
 .div-statRow {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .div-stat {
-    display: flex;
-    width: 255px;
+  display: flex;
+  width: 255px;
 }
 
 .img-statIcon {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 /* ------------------------- FIM SECTION 5: ------------------------- */
@@ -278,47 +275,38 @@ header {
 /* ------------------------- SECTION 6: ------------------------- */
 
 .div-s6 {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 144px;
-    margin-bottom: 40px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 144px;
+  margin-bottom: 40px;
 }
 
 .div-s6-Subdiv {
-    display: flex;
-    gap: 72px;
-    align-items: center;
+  display: flex;
+  gap: 72px;
+  align-items: center;
 }
 
 .div-howtoDesign p {
-    margin-top: 16px;
-    margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 /* ------------------------- FIM SECTION 6: ------------------------- */
 
 /* ------------------------- SECTION 7: ------------------------- */
 
-
-
 /* ------------------------- FIM SECTION 7: ------------------------- */
 
 /* ------------------------- SECTION 8: ------------------------- */
-
-
 
 /* ------------------------- FIM SECTION 8: ------------------------- */
 
 /* ------------------------- SECTION 9: ------------------------- */
 
-
-
 /* ------------------------- FIM SECTION 9: ------------------------- */
 
 /* ------------------------- FOOTER: ------------------------- */
 
-
-
 /* ------------------------- FIM FOOTER: ------------------------- */
-
